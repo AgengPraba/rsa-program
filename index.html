@@ -16,19 +16,105 @@
       rel="stylesheet"
       href="node_modules/select2/dist/css/select2.min.css"
     />
+    <style>
+      body {
+        background-color: #f8f9fa;
+      }
+      
+      header {
+        background-color: #ffffff;
+        box-shadow: 0 2px 4px rgba(0,0,0,.1);
+      }
+
+      .nav-link {
+        color: #495057;
+        font-weight: 500;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        transition: all 0.3s ease;
+      }
+
+      .nav-link:hover {
+        background-color: #e9ecef;
+      }
+
+      .nav-link.active {
+        background-color: #0d6efd;
+        color: white;
+      }
+
+      .card {
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0,0,0,.05);
+        margin-bottom: 1.5rem;
+      }
+
+      .card-header {
+        background-color: #f8f9fa;
+        border-bottom: 1px solid #e9ecef;
+        padding: 1rem;
+        font-weight: 500;
+      }
+
+      .btn {
+        border-radius: 20px;
+        padding: 0.5rem 1.5rem;
+        font-weight: 500;
+      }
+
+      .form-control, .form-select {
+        border-radius: 8px;
+        border: 1px solid #dee2e6;
+      }
+
+      .form-control:focus, .form-select:focus {
+        box-shadow: 0 0 0 0.2rem rgba(13,110,253,.25);
+      }
+
+      textarea.form-control {
+        min-height: 120px;
+      }
+
+      .form-control-sm {
+        border-radius: 6px;
+      }
+
+      hr.border {
+        margin: 2rem 0;
+      }
+
+      /* Section spacing */
+      .section {
+        padding: 2rem 0;
+      }
+
+      /* Custom container padding */
+      .container {
+        padding: 2rem 15px;
+      }
+
+      /* Footer styling */
+      footer {
+        background-color: #ffffff;
+        padding: 1.5rem 0;
+      }
+
+      footer a:hover {
+        color: #0d6efd !important;
+      }
+    </style>
   </head>
   <body>
     <header
-      class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom sticky-top"
+      class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom sticky-top p-4"
     >
       <a
         href="/"
         class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
       >
-        <svg class="bi me-2" width="40" height="32">
-          <use xlink:href="#bootstrap"></use>
-        </svg>
-        <span class="fs-4">RSA Program</span>
+        <i class="bi bi-shield-lock fs-3 me-2"></i>
+        <span class="fs-4 fw-semibold">RSA Program</span>
       </a>
       <ul class="nav nav-pills">
         <li class="nav-item">
@@ -49,9 +135,9 @@
     </header>
 
     <div class="container">
-      <div class="row">
+      <div class="row section">
         <div class="col-md-6">
-          <h3 id="rsa_key_generate" class="pt-5">RSA Key Generation</h3>
+          <h3 id="rsa_key_generate" class="mb-4 fw-bold">RSA Key Generation</h3>
           <div class="form-group">
             <label class="fs-5 my-3">Pick 2 (different) primes: </label>
             <div class="input-group d-flex align-items-center">
@@ -145,8 +231,8 @@
         </div>
       </div>
       <hr class="border border-danger border-2 opacity-50" />
-      <div class="row">
-        <h3 id="rsa_encryption" class="pt-lg-5">RSA Encryption</h3>
+      <div class="row section">
+        <h3 id="rsa_encryption" class="mb-4 fw-bold">RSA Encryption</h3>
         <div class="col-md-12 justify-content-center">
           <div class="form-group mb-4">
             <label class="fs-5 my-3">Enter the message to encrypt: </label>
@@ -196,8 +282,8 @@
       </div>
 
       <hr class="border border-danger border-2 opacity-50" />
-      <div class="row">
-        <h3 id="rsa_descryption" class="pt-5">RSA Descryption</h3>
+      <div class="row section">
+        <h3 id="rsa_descryption" class="mb-4 fw-bold">RSA Descryption</h3>
         <div class="col-md-12 justify-content-center">
           <div class="form-group mb-4">
             <label class="fs-5 my-3"
@@ -260,9 +346,17 @@
         </div>
 
         <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li class="ms-3"><i class="bi bi-twitter-x fs-4"></i></li>
-          <li class="ms-3"><i class="bi bi-github fs-4"></i></li>
-          <li class="ms-3"><i class="bi bi-instagram fs-4"></i></li>
+          <li class="ms-3">
+            <a href="https://www.instagram.com/agengpraba/" class="text-body-secondary text-decoration-none">Ageng</a>
+          </li>
+          <li class="ms-3">|</li>
+          <li class="ms-3">
+              <a href="https://www.instagram.com/briancahyaa/" class="text-body-secondary text-decoration-none">Brian</a>
+          </li>
+          <li class="ms-3">|</li>
+          <li class="ms-3">
+              <a href="https://www.instagram.com/jehianth/" class="text-body-secondary text-decoration-none">Jehian</a>
+          </li>
         </ul>
       </footer>
     </div>
