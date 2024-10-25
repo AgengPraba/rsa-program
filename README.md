@@ -9,7 +9,7 @@
 
 ## Overview
 <div align="justify">
-RSA (Rivest-Shamir-Adleman) adalah algoritma kriptografi asimetris yang digunakan untuk mengenkripsi dan mendekripsi pesan dengan menggunakan bilangan prima 1-10000. Program ini mengimplementasikan algoritma RSA untuk keamanan data dengan menggunakan sepasang kunci (public key dan private key). Encode hanya dikonversi menjadi kode ASCII dalam bentuk desimal. Program sederhana ini dibuat untuk tujuan akademik sebagai tugas mata kuliah Kriptografi tahun 2024 di Program Studi Informatika, Universitas Jenderal Soedirman.
+RSA (Rivest-Shamir-Adleman) adalah algoritma kriptografi asimetris yang digunakan untuk mengenkripsi dan mendekripsi pesan dengan menggunakan bilangan prima 1-10000. Program ini mengimplementasikan algoritma RSA untuk keamanan data dengan menggunakan sepasang kunci (public key dan private key). Encode hanya dikonversi menjadi kode ASCII (American Standard Code for Information Interchange) dalam bentuk desimal. Program sederhana ini dibuat untuk tujuan akademik sebagai tugas mata kuliah Kriptografi tahun 2024 di Program Studi Informatika, Universitas Jenderal Soedirman.
 </div>
 
 ## Fitur
